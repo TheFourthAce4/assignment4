@@ -1,5 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="https://thefourthace4.github.io/assignment4/NationalParks.xsd"
+           targetNamespace="https://thefourthace4.github.io/assignment4/NationalParks.xsd"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
 
   <xs:element name="NationalParks">
     <xs:complexType>
