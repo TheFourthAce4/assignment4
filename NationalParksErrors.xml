@@ -1,13 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <NationalPark xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-              xsi:noNamespaceSchemaLocation="YOUR_XSD_URL_HERE">
+              xsi:noNamespaceSchemaLocation="NationalParks.xsd">
 
-  <!-- ERROR 1: Root element is NationalPark instead of NationalParks -->
-  <!-- ERROR 2: NearestAirport required attribute is missing from Address below -->
-  <!-- ERROR 5: Two Name elements are provided for this national park -->
   <NationalPark Rating="4.9">
     <Name>Grand Canyon</Name>
-    <Name>Grand Canyon National Park</Name>
     <Phone>928-638-7496</Phone>
     <Phone>888-297-2757</Phone>
     <Phone>866-499-2574</Phone>
@@ -20,28 +16,53 @@
     </Address>
   </NationalPark>
 
-  <!-- ERROR 3: Phone element is missing for Yellowstone -->
   <NationalPark Rating="4.8">
     <Name>Yellowstone</Name>
-    <Address NearestAirport="JAC">
-      <Number>1</Number>
-      <Street>Grand Loop Road</Street>
+    <Phone>307-344-7381</Phone>
+    <Phone>307-344-7311</Phone>
+    <Address NearestAirport="Bozeman Yellowstone International">
+      <Number>2</Number>
+      <Street>Off Grand Loop Road</Street>
       <City>Yellowstone National Park</City>
       <State>WY</State>
       <Zip>82190</Zip>
     </Address>
   </NationalPark>
 
-  <!-- ERROR 4: Address element has no closing tag for Yosemite -->
-  <NationalPark Rating="4.9">
+  <NationalPark>
     <Name>Yosemite</Name>
-    <Phone>209-372-0200</Phone>
-    <Address NearestAirport="FAT">
+    <Address NearestAirport="Fresno Yosemite International">
       <Number>9039</Number>
       <Street>Village Drive</Street>
-      <City>Yosemite Valley</City>
+      <City>Yosemite National Park</City>
       <State>CA</State>
       <Zip>95389</Zip>
+    </Address>
+  </NationalPark>
+
+  <NationalPark Rating="4.7">
+    <Name>Zion</Name>
+    <Name>Zion National Park</Name>
+    <Phone>435-772-3256</Phone>
+    <Phone>435-772-3303</Phone>
+    <Address NearestAirport="St. George Regional">
+      <Number>1</Number>
+      <Street>Zion Park Boulevard</Street>
+      <City>Springdale</City>
+      <State>UT</State>
+      <Zip>84767</Zip>
+    </Address>
+  </NationalPark>
+
+  <NationalPark>
+    <Name>Rocky Mountain</Name>
+    <Phone>970-586-1206</Phone>
+    <Address NearestAirport="Denver International">
+      <Number>1000</Number>
+      <Street>US Highway 36</Street>
+      <City>Estes Park</City>
+      <State>CO</State>
+      <Zip>80517</Zip>
   </NationalPark>
 
 </NationalPark>
